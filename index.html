@@ -1,142 +1,553 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
   <head>
+  <title>DC Site</title>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Your awesome title</title>
-  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search resu...">
+<meta name="author" content="">
+<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+<meta name="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
 
-  <link rel="stylesheet" href="/assets/main.css">
-  <link rel="canonical" href="http://lab.diogorusso.com/">
-  <link rel="alternate" type="application/rss+xml" title="Your awesome title" href="/feed.xml">
-  
-  
+
+
+
+<meta name="p:domain_verify" content="f02cbf6a5c8f230685063521292fbfcb"/>
+
+<meta property="fb:app_id"      content="" /> 
+<meta property="og:type"        content="website" /> 
+<meta property="og:title"       content="DC Site" />
+<meta property="og:url"         content="http://lab.diogorusso.com" />
+<meta property="og:image"       content="http://lab.diogorusso.com" />
+<meta property="og:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+" />
+
+ 
+
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="http://lab.diogorusso.com" />
+<meta name="twitter:url" content="http://lab.diogorusso.com">
+<meta name="twitter:title" content="DC Site" />
+<meta name="twitter:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+" />
+<meta name="twitter:image" content="http://lab.diogorusso.com" />
+<meta name="twitter:site" content="@hello_diogo">
+<meta name="twitter:creator" content="@hello_diogo">
+  <link rel=”author” href=”https://plus.google.com/116739255173599428138”/>
+<link rel="icon"  type="image/ico"  href="/">
+<link rel="canonical" href="http://lab.diogorusso.com/">
+<link rel="alternate" type="application/rss+xml" title="DC Site" href="http://lab.diogorusso.com/feed.xml">
+
+  <!-- fonts -->
+<link href='http://fonts.googleapis.com/css?family=Cabin:400,400italic,500,500italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:400,500,600,700' rel='stylesheet' type='text/css'>
+
+<!-- style Normalize + Foundation + Styles -->
+<link rel="stylesheet" href="/assets/css/style.css">
+<!--<link rel="stylesheet" href="/lib/custom.css">-->
+
+  <script>document.createElement( "picture" );</script>
+<script src="/assets/js/head.js"></script>
+<script>
+(function(d) {
+var config = {
+    kitId: 'rvc4hsl',
+    scriptTimeout: 3000,
+    async: true
+},
+h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+})(document);
+</script>
+
 </head>
 
-
+ 
   <body>
+    
+<div class="overlay">
+    <div class="preloader text-center">
 
-    <header class="site-header" role="banner">
+        <img src="/">
 
-  <div class="wrapper">
+        <div class="status">
+  <div class="spinner">
+    <div class="rect1"></div>
+    <div class="rect2"></div>
+    <div class="rect3"></div>
+    <div class="rect4"></div>
+    <div class="rect5"></div>
+  </div> <!-- spinner-->
+</div><!-- status -->
 
-    <a class="site-title" href="/">Your awesome title</a>
+    </div><!--preloader-->
+</div><!-- overlay -->
+<a id="top"></a>
+<div class="anim-menu">
+  <nav class="top-bar large" data-topbar role="navigation">
+    <ul class="title-area">
+      <li>
+       <a href="">
+    
+    <img src="/">
+    
+</a>
+      </li>
+      <li class="toggle-topbar">
+        <a class="menu-button" id="menuButton">
+          Menu <i class="fa fa-bars"></i>
+        </a>
+      </li>
+    </ul>
+    <section class="top-bar-section">
+      <ul class="right text-right">
+        
+  <li>
+    
+      
+              <a class="page-scroll" href="#quem-somos">
+                Quem Somos
+              </a>
+        
+    
+</li>
 
-    <nav class="site-nav">
-      <span class="menu-icon">
-        <svg viewBox="0 0 18 15" width="18px" height="15px">
-          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-        </svg>
-      </span>
+  <li>
+    
+      
+              <a class="page-scroll" href="#proposito">
+                Nosso Proposótio
+              </a>
+        
+    
+</li>
 
-      <div class="trigger">
+  <li>
+    
+      
+              <a class="page-scroll" href="#time">
+                Time
+              </a>
         
-          
-          <a class="page-link" href="/about/">About</a>
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-      </div>
-    </nav>
+    
+</li>
 
+  <li>
+    
+      
+              <a class="page-scroll" href="#especialidades">
+                Especialidades
+              </a>
+        
+    
+</li>
+
+  <li>
+    
+      
+              <a class="page-scroll" href="#entregas">
+                Entregas
+              </a>
+        
+    
+</li>
+
+  <li>
+    
+      
+              <a class="page-scroll" href="#contato">
+                Contato
+              </a>
+        
+    
+</li>
+
+      <ul class="right text-right">
+    </section>
+  </nav>
+</div>
+<div class="content-wrap">
+    <section class="hero">
+  <div class="row intro">
+    <div class="small-centered medium-uncentered medium-6 large-7 columns">
+      <h1>
+        DC Associados.
+      </h1>
+      <h2>
+        Simplifique o direito.
+      </h2>
+    </div>
+    <!--<div class="small-centered medium-uncentered medium-6 large-5 columns">
+      <div class="tech-img"></div>
+    </div>-->
   </div>
+</section>
+    <!-- Fazendo a Diferença -->
+<section id="quem-somos" class="padding-5rem-top-bottom">
+  <div class="row">
+    <div class="small-12 medium-12 large-12 columns"><h2>Fazendo a diferença</h2></div>
+    <div class="small-12 medium-6 large-6 columns">
+          DC Associados é um escritório de advocacia diferenciado e formado por um time cujo propósito é simplificar o direito.
+          <br><br>
+          Somos advogados corporativos, especializados em direito societário/M&A/governança corporativa, private equity, contratos e consultoria jurídica estratégica. Representamos interesses de clientes em diferentes indústrias e perfis, incluindo Cias. Abertas, investidores, fundos de private equity/venture capital/hedge funds, empresas investidas e familiares, executivos, empreendedores e Family Offices. Somos abrangentes no perfil de nossos clientes, mas focados em nossa atuação.
+          <br> <br>
+          Nosso histórico profissional nos permite conhecer profundamente as necessidades de nossos clientes e o que significa liderar 
+    </div>
+    <div class="small-12 medium-6 large-6 columns">
+      um departamento jurídico: os desafios, as necessidades e as soluções jurídicas necessárias e disponíveis. Temos a expertise e o perfil para fazer mais com menos: sofisticação para interagir com demandas e expectativas do C-Level, board, acionistas e, ao mesmo tempo, gerenciar recursos com eficiência e alinhamento de interesses, fazendo acontecer.
+      <br><br>
+      Nossa sede está baseada em São Paulo, e nossos profissionais são reconhecidos por sua excelência, ética, capacidade e entrega. Ao longo de suas respectivas carreiras, receberam inúmeros prêmios e reconhecimentos internacionais por sua atuação, incluindo “M&A Individual of the Year-Latin America” pela ILO-ACC-Association of Corporate Counsel-NY; e “Best Legal Department - Latin America, pelo International General Counsel Awards-NY.
+    </div>
+  </div>
+</section>
 
-</header>
+<!-- Foto Escritório -->
+<section class="padding-5rem-top-bottom">
+  <div class="row full-width">
+    <div class="small-12" style="background: #ccc; height: 25rem; width:100%;">
 
+    </div>
+  </div>
+</section>
+<!-- O que nos move -->
+<section id="proposito" class="padding-5rem-top-bottom">
+  <div class="row relative">
+    <div class="small-12 medium-6 large-6 columns v-center">
+      <h2>O que nos move</h2>
+      É tempo de simplificar o Direito.<br> 
+      De ter menos formalidade e mais resultados.<br> 
+      De ter menos pompas e mais soluções.<br> 
+      Por isso, buscamos sempre o mais simples, mesmo quando estamos diante do complexo.<br>
+      De executivo para executivo.<br>
+      E sempre em busca de simplicidade.<br> 
+      Porque simplicidade se faz com agilidade, eficiência e excelência.<br>
+    </div>
+    <div class="small-12 medium-6 large-6 columns">
+      <img src="http://placehold.it/1080x1080" alt="">
+    </div>
+  </div>
+</section>
 
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        <div class="home">
+<!-- Time -->
 
-  <h1 class="page-heading">Minima Local</h1>
-  
-  
+<section id="time" class="padding-5rem-top-bottom">
+  <div class="row text-center">
+    <div class="small-12 columns">
+      <h1>Nosso maior ativo: Nosso talento</h1>
+      <h2>time</h2>
+    </div>
+    <ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-3" data-equalizer>
+      
+         <li>
+          <div data-equalizer-watch>
+            <img src="http://placehold.it/1080x1080" alt="Image 1" />
+            <p>Daniel Carneiro</p>
+          </div>
+        </li>
+      
+         <li>
+          <div data-equalizer-watch>
+            <img src="http://placehold.it/1080x1080" alt="Image 1" />
+            <p>Giovanna Vecchio</p>
+          </div>
+        </li>
+      
+         <li>
+          <div data-equalizer-watch>
+            <img src="http://placehold.it/1080x1080" alt="Image 1" />
+            <p>Pamela Marsura</p>
+          </div>
+        </li>
+      
+    </ul>
+      <!--<div class="large-12 columns">
+    include organism/content/accordion/accordion.html
+    </div>
+  <div class="small-6 medium-3 large-3 columns">
+    <img src="http://placehold.it/260x220" alt="">
+    <div style="background: blue;color: white;bottom:20px;position: aboslute;width:75%;margin: auto; ">
+      name da pessoa
+    </div>
+  </div>
+  <div class="small-6 medium-3 large-3 columns">
+    <img src="http://placehold.it/260x220" alt="">
+  </div>
+  <div class="small-6 medium-3 large-3 columns">
+    <img src="http://placehold.it/260x220" alt="">
+  </div>
+  <div class="small-6 medium-3 large-3 columns">
+    <img src="http://placehold.it/260x220" alt="">
+  </div>-->
+  </div>
+</section>
 
-
-  <ul class="post-list">
+<!-- Especialidades -->
+<section id="especialidades" <section class="padding-5rem-top-bottom">
+  <div class="row">
+    <div class="small-12 columns text-center">
+      <h1>Áreas em que nos diferenciamos</h1>
+      <h2>ESPECIALIDADES</h2>
+    </div>
+    <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-2" data-equalizer>
     
       <li>
-        <span class="post-meta">Mar 12, 2017</span>
-
-        <h2>
-          <a class="post-link" href="/jekyll/update/2017/03/12/welcome-to-jekyll.html">Welcome to Jekyll!</a>
-        </h2>
+        <div data-equalizer-watch>
+          <h4>Societário/M&A/ Governança Corporativa:</h4>
+          <hr>
+          <ul>
+            
+            <li>Ampla experiência em operações sofisticadas;</li>
+          
+            <li>Ativismo societário;</li>
+          
+            <li>Atuação em cias abertas e rotina societária em geral;</li>
+          
+            <li>Suporte jurídico a family offices e empreendedores.</li>
+          
+        </div>
       </li>
     
-  </ul>
+      <li>
+        <div data-equalizer-watch>
+          <h4>Private Equity</h4>
+          <hr>
+          <ul>
+            
+            <li>Representação de private equity firms e hedge funds em operações societárias estruturadas;</li>
+          
+            <li>Assessoria a empresas investidas e board of directors;</li>
+          
+            <li>Assessoria Jurídica em todo o ciclo do investimento/desinvestimento;</li>
+          
+        </div>
+      </li>
+    
+      <li>
+        <div data-equalizer-watch>
+          <h4>Consultoria Jurídica Estratégica</h4>
+          <hr>
+          <ul>
+            
+            <li>Assessoria para executivos, conselheiros, c-level e acionistas em operações juridicas estratégicas e/ou de alta complexidade;</li>
+          
+            <li>Alinhamento de capacidade jurídica técnica/operacional executivas;</li>
+          
+            <li>Consultoria jurídica estratégica e organizacional.</li>
+          
+        </div>
+      </li>
+    
+      <li>
+        <div data-equalizer-watch>
+          <h4>Contratos:</h4>
+          <hr>
+          <ul>
+            
+            <li>Sólida expertise em contratos empresariais, em geral;</li>
+          
+            <li>Aquisição e vendas de ativos;</li>
+          
+            <li>Representação de credores e devedores em operações distressed;</li>
+          
+            <li>Proteção patrimonial.</li>
+          
+        </div>
+      </li>
+    
+    </ul>
+  </div>
+</section>
 
-  <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
+<!-- Entregas -->
+<section id="entregas" class="padding-5rem-top-bottom">
+  <div class="row">
+    <div class="small-12 columns text-center">
+    <h1>Nossa Entrega</h1>
+    <h2>Track-Record recente de nosso time</h2>
+  </div>
+    <ul class="small-block-grid-2 medium-block-grid-4 large-block-grid-4" data-equalizer>
+       
+         <li>
+          <div data-equalizer-watch>
+            <img src="http://placehold.it/1080x1080" alt="Image 1" />
+            <p>Emissão de bônus subscrição em valor superior a R$190MM</p>
+          </div>
+        </li>
+      
+         <li>
+          <div data-equalizer-watch>
+            <img src="http://placehold.it/1080x1080" alt="Image 1" />
+            <p>Aumento de capital de Cia Aberta, em valor superior a R$100MM;</p>
+          </div>
+        </li>
+      
+         <li>
+          <div data-equalizer-watch>
+            <img src="http://placehold.it/1080x1080" alt="Image 1" />
+            <p>Estruturação de contrato de EPC global de infraestrutura para empresa investida de private equity, em valor superior a R$20MM; </p>
+          </div>
+        </li>
+      
+         <li>
+          <div data-equalizer-watch>
+            <img src="http://placehold.it/1080x1080" alt="Image 1" />
+            <p>Obtenção de registro de Cia aberta.</p>
+          </div>
+        </li>
+      
+         <li>
+          <div data-equalizer-watch>
+            <img src="http://placehold.it/1080x1080" alt="Image 1" />
+            <p>Assessoria a empresa investida de private equity em diversas operações de fusões e aquisições, em valor global superior a R$300MM</p>
+          </div>
+        </li>
+      
+         <li>
+          <div data-equalizer-watch>
+            <img src="http://placehold.it/1080x1080" alt="Image 1" />
+            <p> Assessoria a Companhia brasileira em estruturação de joint-venture com Cia aberta americana (NYSE) para operação no Brasil</p>
+          </div>
+        </li>
+      
+         <li>
+          <div data-equalizer-watch>
+            <img src="http://placehold.it/1080x1080" alt="Image 1" />
+            <p>Reestruturações societárias de grupo de varejo, envolvendo a otimização societária de mais de 20 empresas do grupo.</p>
+          </div>
+        </li>
+      
+         <li>
+          <div data-equalizer-watch>
+            <img src="http://placehold.it/1080x1080" alt="Image 1" />
+            <p>Renegociação global da dívida corporativa de Cia Aberta e emissão de debêntures ICVM 476 em valor superior a R$500MM;</p>
+          </div>
+        </li>
+      
+         <li>
+          <div data-equalizer-watch>
+            <img src="http://placehold.it/1080x1080" alt="Image 1" />
+            <p>Diversas estruturações contratuais, incluindo: (i) turn-around e formalização de redes e franquias, representação comercial e contratos de fornecimento; e (ii) acordos de licenças internacionais, supply chain e global sourcing em diversas jurisdições.</p>
+          </div>
+        </li>
+      
+         <li>
+          <div data-equalizer-watch>
+            <img src="http://placehold.it/1080x1080" alt="Image 1" />
+            <p>Emissão de debêntures simples não conversíveis em ações ICVM 476 de Companhia Aberta em valor superior a R$200MM</p>
+          </div>
+        </li>
+      
+    </ul>
+  </div>
+</section>
+
 
 </div>
+<div class="back-to-top">
+    <a href="#top" class="button btn-circle page-scroll">Top</a>
+</div>
 
-      </div>
-    </main>
 
-    <footer class="site-footer">
 
-  <div class="wrapper">
 
-    <h2 class="footer-heading">Your awesome title</h2>
+<footer id="contato" class="padding-5rem-top-bottom">
+    
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>
-            
-              Your awesome title
-            
-            </li>
-            
-            <li><a href="mailto:your-email@domain.com">your-email@domain.com</a></li>
-            
-        </ul>
-      </div>
 
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          
-          <li>
-            <a href="https://github.com/jekyll"><span class="icon icon--github"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
-</span><span class="username">jekyll</span></a>
+<div class="row relative">
+    
 
-          </li>
-          
-
-          
-          <li>
-            <a href="https://twitter.com/jekyllrb"><span class="icon icon--twitter"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
-</span><span class="username">jekyllrb</span></a>
-
-          </li>
-          
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-</p>
-      </div>
+    <div class="large-6 columns v-center">
+        <h1>Entre em contato<br>com a gente.</h1>
+        <p>
+            Parque da Cidade - Torre Tarumã<br>
+            Av. das Nações Unidas 14.401<br> 
+            23 Andar cj. 2304 e 2305<br>
+            São Paulo, SP<br>
+            55 11 97615 3866<br>
+            dc@dcassociados.com.br<br>
+        </p>
     </div>
 
-  </div>
+    <div class="large-6 columns">
+        <div id="map" style="height: 500px"></div>
+    </div>
+
+</div>
 
 </footer>
 
 
-  </body>
+<script src="/assets/js/script.js"></script>
 
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDBdh6dj3XOB_UgrUYOP_DvyTT_zbwAc6U&sensor=false">
+</script>
+
+<script>
+    $( document ).ready( function() {
+
+
+        var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
+        var icons = {
+          parking: {
+            icon: iconBase + 'parking_lot_maps.png'
+          },
+          library: {
+            icon: iconBase + 'library_maps.png'
+          },
+          info: {
+            icon: iconBase + 'info-i_maps.png'
+          }
+        };
+
+
+
+	//Google Maps JS
+	//Set Map
+	function initialize() {
+			var myLatlng = new google.maps.LatLng(-33.916365282092855, 151.22937399734496);
+			var imagePath = 'https://maps.google.com/mapfiles/kml/shapes/parking_lot_maps.png'
+			var mapOptions = {
+				zoom: 17,
+				center: myLatlng,
+				mapTypeId: google.maps.MapTypeId.ROADMAP,
+			}
+
+		var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+		//Callout Content
+		var contentString = 'Some address here..';
+		//Set window width + content
+		var infowindow = new google.maps.InfoWindow({
+			content: contentString,
+			maxWidth: 500
+		});
+
+		//Add Marker
+		var marker = new google.maps.Marker({
+			position: myLatlng,
+			map: map,
+			icon: imagePath,
+			title: 'image title'
+		});
+
+		google.maps.event.addListener(marker, 'click', function() {
+			infowindow.open(map,marker);
+		});
+
+		//Resize Function
+		google.maps.event.addDomListener(window, "resize", function() {
+			var center = map.getCenter();
+			google.maps.event.trigger(map, "resize");
+			map.setCenter(center);
+		});
+	}
+
+	google.maps.event.addDomListener(window, 'load', initialize);
+
+});
+</script>
+  </body>
 </html>
