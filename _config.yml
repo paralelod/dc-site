@@ -1,5 +1,5 @@
 baseurl: dc-site
-url: 'http://lab.diogorusso.com'
+url: ''
 markdown: kramdown
 gems:
   - jekyll-feed
