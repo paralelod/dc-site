@@ -1,46 +1,27 @@
-<footer class="site-footer">
 
-  <div class="wrapper">
+<footer id="contato" class="padding-5rem-top-bottom">
+    
 
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>
-            {% if site.author %}
-              {{ site.author | escape }}
-            {% else %}
-              {{ site.title | escape }}
-            {% endif %}
-            </li>
-            {% if site.email %}
-            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {% endif %}
-        </ul>
-      </div>
+<div class="row relative">
+    
 
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description | escape }}</p>
-      </div>
+    <div class="large-6 columns v-center">
+        <h1>Entre em contato<br>com a gente.</h1>
+        <p>
+            Parque da Cidade - Torre Tarumã<br>
+            Av. das Nações Unidas 14.401<br> 
+            23 Andar cj. 2304 e 2305<br>
+            São Paulo, SP<br>
+            55 11 97615 3866<br>
+            dc@dcassociados.com.br<br>
+        </p>
     </div>
 
-  </div>
+    <div class="large-6 columns">
+        <div id="map" style="height: 500px"></div>
+    </div>
+
+</div>
 
 </footer>

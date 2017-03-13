@@ -13,7 +13,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - package.json
-title: Your awesome title
+title: DC Site
 email: your-email@domain.com
 description: >
   Write an awesome description for your new site here. You can edit this line in

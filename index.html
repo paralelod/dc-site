@@ -1,0 +1,134 @@
+---
+layout: home
+page-id: home
+---
+
+<!-- Fazendo a Diferença -->
+<section id="quem-somos" class="padding-5rem-top-bottom">
+  <div class="row">
+    <div class="small-12 medium-12 large-12 columns"><h2>Fazendo a diferença</h2></div>
+    <div class="small-12 medium-6 large-6 columns">
+          DC Associados é um escritório de advocacia diferenciado e formado por um time cujo propósito é simplificar o direito.
+          <br><br>
+          Somos advogados corporativos, especializados em direito societário/M&A/governança corporativa, private equity, contratos e consultoria jurídica estratégica. Representamos interesses de clientes em diferentes indústrias e perfis, incluindo Cias. Abertas, investidores, fundos de private equity/venture capital/hedge funds, empresas investidas e familiares, executivos, empreendedores e Family Offices. Somos abrangentes no perfil de nossos clientes, mas focados em nossa atuação.
+          <br> <br>
+          Nosso histórico profissional nos permite conhecer profundamente as necessidades de nossos clientes e o que significa liderar 
+    </div>
+    <div class="small-12 medium-6 large-6 columns">
+      um departamento jurídico: os desafios, as necessidades e as soluções jurídicas necessárias e disponíveis. Temos a expertise e o perfil para fazer mais com menos: sofisticação para interagir com demandas e expectativas do C-Level, board, acionistas e, ao mesmo tempo, gerenciar recursos com eficiência e alinhamento de interesses, fazendo acontecer.
+      <br><br>
+      Nossa sede está baseada em São Paulo, e nossos profissionais são reconhecidos por sua excelência, ética, capacidade e entrega. Ao longo de suas respectivas carreiras, receberam inúmeros prêmios e reconhecimentos internacionais por sua atuação, incluindo “M&A Individual of the Year-Latin America” pela ILO-ACC-Association of Corporate Counsel-NY; e “Best Legal Department - Latin America, pelo International General Counsel Awards-NY.
+    </div>
+  </div>
+</section>
+
+<!-- Foto Escritório -->
+<section class="padding-5rem-top-bottom">
+  <div class="row full-width">
+    <div class="small-12" style="background: #ccc; height: 25rem; width:100%;">
+
+    </div>
+  </div>
+</section>
+<!-- O que nos move -->
+<section id="proposito" class="padding-5rem-top-bottom">
+  <div class="row relative">
+    <div class="small-12 medium-6 large-6 columns v-center">
+      <h2>O que nos move</h2>
+      É tempo de simplificar o Direito.<br> 
+      De ter menos formalidade e mais resultados.<br> 
+      De ter menos pompas e mais soluções.<br> 
+      Por isso, buscamos sempre o mais simples, mesmo quando estamos diante do complexo.<br>
+      De executivo para executivo.<br>
+      E sempre em busca de simplicidade.<br> 
+      Porque simplicidade se faz com agilidade, eficiência e excelência.<br>
+    </div>
+    <div class="small-12 medium-6 large-6 columns">
+      <img src="http://placehold.it/1080x1080" alt="">
+    </div>
+  </div>
+</section>
+
+<!-- Time -->
+
+<section id="time" class="padding-5rem-top-bottom">
+  <div class="row text-center">
+    <div class="small-12 columns">
+      <h1>Nosso maior ativo: Nosso talento</h1>
+      <h2>time</h2>
+    </div>
+    <ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-3" data-equalizer>
+      {% for person in site.data.time %}
+         <li>
+          <div data-equalizer-watch>
+            <img src="http://placehold.it/1080x1080" alt="Image 1" />
+            <p>{{ person.name }}</p>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+      <!--<div class="large-12 columns">
+    include organism/content/accordion/accordion.html
+    </div>
+  <div class="small-6 medium-3 large-3 columns">
+    <img src="http://placehold.it/260x220" alt="">
+    <div style="background: blue;color: white;bottom:20px;position: aboslute;width:75%;margin: auto; ">
+      name da pessoa
+    </div>
+  </div>
+  <div class="small-6 medium-3 large-3 columns">
+    <img src="http://placehold.it/260x220" alt="">
+  </div>
+  <div class="small-6 medium-3 large-3 columns">
+    <img src="http://placehold.it/260x220" alt="">
+  </div>
+  <div class="small-6 medium-3 large-3 columns">
+    <img src="http://placehold.it/260x220" alt="">
+  </div>-->
+  </div>
+</section>
+
+<!-- Especialidades -->
+<section id="especialidades" <section class="padding-5rem-top-bottom">
+  <div class="row">
+    <div class="small-12 columns text-center">
+      <h1>Áreas em que nos diferenciamos</h1>
+      <h2>ESPECIALIDADES</h2>
+    </div>
+    <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-2" data-equalizer>
+    {% for especialidade in site.data.especialidades %}
+      <li>
+        <div data-equalizer-watch>
+          <h4>{{ especialidade.title }}</h4>
+          <hr>
+          <ul>
+            {% for topic in especialidade.topics %}
+            <li>{{ topic }}</li>
+          {% endfor %}
+        </div>
+      </li>
+    {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<!-- Entregas -->
+<section id="entregas" class="padding-5rem-top-bottom">
+  <div class="row">
+    <div class="small-12 columns text-center">
+    <h1>Nossa Entrega</h1>
+    <h2>Track-Record recente de nosso time</h2>
+  </div>
+    <ul class="small-block-grid-2 medium-block-grid-4 large-block-grid-4" data-equalizer>
+       {% for entrega in site.data.entregas %}
+         <li>
+          <div data-equalizer-watch>
+            <img src="http://placehold.it/1080x1080" alt="Image 1" />
+            <p>{{ entrega.description }}</p>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
