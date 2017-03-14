@@ -1,7 +1,7 @@
 PATH
-  remote: _build/_themes/minima-local
+  remote: _build/_themes/dc-site
   specs:
-    minima-local (2.1.0)
+    dc-site (2.1.0)
       jekyll (~> 3.3)
 
 GEM
@@ -53,11 +53,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  dc-site!
   jekyll (= 3.4.2)
   jekyll-feed (~> 0.6)
   jekyll-sitemap
   minima (~> 2.0)
-  minima-local!
   tzinfo-data
 
 RUBY VERSION

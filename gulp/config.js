@@ -18,7 +18,7 @@ var sassSrc = buildSrc+'/_sass';
 var scriptSrc = buildSrc+'/_scripts';
 var scriptSrcInit = buildSrc+'/_scripts/_init';
 var bowerSrc = buildSrc+'/bower';
-var themeSrc = './_build/_themes/minima-local';
+var themeSrc = './_build/_themes/dc-site';
 var themeAssets = themeSrc+'/assets';
 
 //dist
@@ -122,7 +122,7 @@ module.exports = {
   script: {
 
       headSrc: [
-        bowerSrc+'/picturefill-master/dist/picturefill.js'
+        bowerSrc+'/picturePolyfill/dist/picturePolyfill.min.js'
       ],
 
       // head js dist
@@ -133,9 +133,10 @@ module.exports = {
         bowerSrc+'/foundation/js/vendor/jquery.js' ,
         bowerSrc+'/foundation/js/vendor/modernizr.js' ,
         bowerSrc+'/foundation/js/vendor/fastclick.js' ,
-        bowerSrc+'/foundation/js/foundation.min.js',
-        bowerSrc+'/jquery.easing/js/jquery.easing.min.js' ,
-        scriptSrc+'/my_scripts/**/'
+        bowerSrc+'/foundation/js/foundation.js',
+        bowerSrc+'/jquery.easing/js/jquery.easing.js' ,
+        scriptSrc+'/_init/*.js',
+        scriptSrc+'/my_scripts/*.js'
         // bowerSrc+'/imagesloaded/imagesloaded.pkgd.min.js',
         // bowerSrc+'/isotope/dist/isotope.pkgd.min.js',
         // bowerSrc+'/fullpage.js/dist/jquery.fullpage.min.js',

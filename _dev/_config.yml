@@ -1,21 +1,8 @@
 baseurl: ''
 url: ''
 markdown: kramdown
-gems:
-  - jekyll-feed
-  - jekyll-sitemap
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - gulpfile.js
-  - _assets
-  - bower.json
-  - Gemfile
-  - Gemfile.lock
-  - package.json
-  - .publish
-theme: minima-local
-title: Your awesome title
+theme: dc-site
+title: DC Site
 email: your-email@domain.com
 description: >
   Write an awesome description for your new site here. You can edit this line in
@@ -23,3 +10,8 @@ description: >
   results) and in your feed.xml site description.
 twitter_username: jekyllrb
 github_username: jekyll
+gems:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock
