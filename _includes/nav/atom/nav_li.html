@@ -1,23 +1,23 @@
 <li>
     {% if link.external == true %}
       {% if link.icon %}
-        <a href="{{ link.url }}" target="blank">
+        <a href="{{ site.baseurl }}{{ link.url }}" target="blank">
           <i class="fa fa-{{ link.icon }}" style="color:#{{ link.icon-color }}"></i> 
           {{ link.title }}
         </a>
       {% else %}
-        <a class="page-scroll" href="{{ link.url }}">
+        <a class="page-scroll" href="{{ site.baseurl }}{{ link.url }}">
           {{ link.title }}
         </a>
       {% endif %}
     {% else %}
       {% if link.icon %}
-        <a class="page-scroll" href="{{ link.url }}">
+        <a class="page-scroll" href="{{ site.baseurl }}{{ link.url }}">
           <i class="fa fa-{{ link.icon }}" style="color:#{{ link.icon-color }}"></i> 
           {{ link.title }}
         </a>
       {% else %}
-              <a class="page-scroll" href="{{ link.url }}">
+              <a class="page-scroll" href="{{ site.baseurl }}{{ link.url }}">
                 {{ link.title }}
               </a>
         {% endif %}

@@ -1,11 +1,12 @@
 ---
 layout: default
 ---
-{% include loading/cover.html %}
+
 <a id="top"></a>
 {% include nav/nav.html %}
-<div class="content-wrap">
-    {% include masthead.html %}
+{% include loading/cover.html %}
+{% include masthead.html %}
+<div class="content">
     {{ content }}
 </div>
 {% include btn_back-top.html %}

@@ -1,19 +1,24 @@
 <div class="anim-menu">
-  <nav class="top-bar large" data-topbar role="navigation">
+
+   <nav class="top-bar" data-topbar="">
     <ul class="title-area">
-      <li>
-      {% include nav/atom/nav_logo.html %}
-      </li>
-      <li class="toggle-topbar">
-        <a class="menu-button" id="menuButton">
-          Menu <i class="fa fa-bars"></i>
+      <!-- Title Area -->
+      <li class="name">
+        <a href="#">
+            {% include nav/atom/nav_logo.html %}
         </a>
       </li>
+      <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
     </ul>
-    <section class="top-bar-section">
+
+    
+  <section class="top-bar-section">
+      <!-- Right Nav Section -->
       <ul class="right text-right">
-        {% include nav/atom/nav_li-loop.html %}
-      <ul class="right text-right">
-    </section>
-  </nav>
+       {% include nav/atom/nav_li-loop.html %}
+      </ul>
+    </section></nav>
+  
 </div>
+
+ 
