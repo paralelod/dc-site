@@ -67,44 +67,29 @@ h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bw
 
  
   <body>
-    
-<div class="overlay">
-    <div class="preloader text-center">
-
-        <img src="/">
-
-        <div class="status">
-  <div class="spinner">
-    <div class="rect1"></div>
-    <div class="rect2"></div>
-    <div class="rect3"></div>
-    <div class="rect4"></div>
-    <div class="rect5"></div>
-  </div> <!-- spinner-->
-</div><!-- status -->
-
-    </div><!--preloader-->
-</div><!-- overlay -->
-<a id="top"></a>
+    <a id="top"></a>
 <div class="anim-menu">
-  <nav class="top-bar large" data-topbar role="navigation">
+
+   <nav class="top-bar" data-topbar="">
     <ul class="title-area">
-      <li>
-       <a href="">
+      <!-- Title Area -->
+      <li class="name">
+        <a href="#">
+             <a href="">
     
     <img src="/">
     
 </a>
-      </li>
-      <li class="toggle-topbar">
-        <a class="menu-button" id="menuButton">
-          Menu <i class="fa fa-bars"></i>
         </a>
       </li>
+      <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
     </ul>
-    <section class="top-bar-section">
+
+    
+  <section class="top-bar-section">
+      <!-- Right Nav Section -->
       <ul class="right text-right">
-        
+       
   <li>
     
       
@@ -165,12 +150,31 @@ h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bw
     
 </li>
 
-      <ul class="right text-right">
-    </section>
-  </nav>
+      </ul>
+    </section></nav>
+  
 </div>
-<div class="content-wrap">
-    <section class="hero">
+
+ 
+
+<div class="overlay">
+    <div class="preloader text-center">
+
+        <img src="/">
+
+        <div class="status">
+  <div class="spinner">
+    <div class="rect1"></div>
+    <div class="rect2"></div>
+    <div class="rect3"></div>
+    <div class="rect4"></div>
+    <div class="rect5"></div>
+  </div> <!-- spinner-->
+</div><!-- status -->
+
+    </div><!--preloader-->
+</div><!-- overlay -->
+<section class="hero">
   <div class="row intro">
     <div class="small-centered medium-uncentered medium-6 large-7 columns">
       <h1>
@@ -185,6 +189,7 @@ h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bw
     </div>-->
   </div>
 </section>
+<div class="content">
     <!-- Fazendo a Diferença -->
 <section id="quem-somos" class="padding-5rem-top-bottom">
   <div class="row">
@@ -367,7 +372,8 @@ h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bw
     <div class="small-12 columns text-center">
     <h1>Nossa Entrega</h1>
     <h2>Track-Record recente de nosso time</h2>
-  </div>
+    </div>
+    <div class="small-12 columns text-center">
     <ul class="small-block-grid-2 medium-block-grid-4 large-block-grid-4" data-equalizer>
        
          <li>
@@ -441,6 +447,7 @@ h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bw
         </li>
       
     </ul>
+    
   </div>
 </section>
 
@@ -452,32 +459,23 @@ h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bw
 
 
 
-
 <footer id="contato" class="padding-5rem-top-bottom">
-    
-
-
-<div class="row relative">
-    
-
-    <div class="large-6 columns v-center">
-        <h1>Entre em contato<br>com a gente.</h1>
-        <p>
-            Parque da Cidade - Torre Tarumã<br>
-            Av. das Nações Unidas 14.401<br> 
-            23 Andar cj. 2304 e 2305<br>
-            São Paulo, SP<br>
-            55 11 97615 3866<br>
-            dc@dcassociados.com.br<br>
-        </p>
+    <div class="row relative">
+        <div class="large-6 columns v-center">
+            <h1>Entre em contato<br>com a gente.</h1>
+            <p>
+                Parque da Cidade - Torre Tarumã<br>
+                Av. das Nações Unidas 14.401<br> 
+                23 Andar cj. 2304 e 2305<br>
+                São Paulo, SP<br>
+                55 11 97615 3866<br>
+                dc@dcassociados.com.br<br>
+            </p>
+        </div>
+        <div class="large-6 columns">
+            <div id="map" style="height: 500px"></div>
+        </div>
     </div>
-
-    <div class="large-6 columns">
-        <div id="map" style="height: 500px"></div>
-    </div>
-
-</div>
-
 </footer>
 
 
