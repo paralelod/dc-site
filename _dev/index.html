@@ -57,34 +57,18 @@ page-id: home
       <h1>Nosso maior ativo: Nosso talento</h1>
       <h2>time</h2>
     </div>
-    <ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-3" data-equalizer>
-      {% for person in site.data.time %}
-         <li>
-          <div data-equalizer-watch>
-            <img src="http://placehold.it/1080x1080" alt="Image 1" />
-            <p>{{ person.name }}</p>
-          </div>
-        </li>
-      {% endfor %}
-    </ul>
-      <!--<div class="large-12 columns">
-    include organism/content/accordion/accordion.html
+    <div class="small-12 columns">
+      <ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-3" data-equalizer>
+        {% for person in site.data.time %}
+          <li>
+            <div data-equalizer-watch>
+              <img src="http://placehold.it/1080x1080" alt="Image 1" />
+              <p>{{ person.name }}</p>
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
     </div>
-  <div class="small-6 medium-3 large-3 columns">
-    <img src="http://placehold.it/260x220" alt="">
-    <div style="background: blue;color: white;bottom:20px;position: aboslute;width:75%;margin: auto; ">
-      name da pessoa
-    </div>
-  </div>
-  <div class="small-6 medium-3 large-3 columns">
-    <img src="http://placehold.it/260x220" alt="">
-  </div>
-  <div class="small-6 medium-3 large-3 columns">
-    <img src="http://placehold.it/260x220" alt="">
-  </div>
-  <div class="small-6 medium-3 large-3 columns">
-    <img src="http://placehold.it/260x220" alt="">
-  </div>-->
   </div>
 </section>
 
@@ -95,20 +79,22 @@ page-id: home
       <h1>Áreas em que nos diferenciamos</h1>
       <h2>ESPECIALIDADES</h2>
     </div>
-    <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-2" data-equalizer>
-    {% for especialidade in site.data.especialidades %}
-      <li>
-        <div data-equalizer-watch>
-          <h4>{{ especialidade.title }}</h4>
-          <hr>
-          <ul>
-            {% for topic in especialidade.topics %}
-            <li>{{ topic }}</li>
-          {% endfor %}
-        </div>
-      </li>
-    {% endfor %}
-    </ul>
+    <div class="small-12 columns">
+      <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-2" data-equalizer>
+      {% for especialidade in site.data.especialidades %}
+        <li>
+          <div data-equalizer-watch>
+            <h4>{{ especialidade.title }}</h4>
+            <hr>
+            <ul>
+              {% for topic in especialidade.topics %}
+              <li>{{ topic }}</li>
+            {% endfor %}
+          </div>
+        </li>
+      {% endfor %}
+      </ul>
+    </div>
   </div>
 </section>
 
@@ -119,18 +105,19 @@ page-id: home
     <h1>Nossa Entrega</h1>
     <h2>Track-Record recente de nosso time</h2>
     </div>
-    <div class="small-12 columns text-center">
-    <ul class="small-block-grid-2 medium-block-grid-4 large-block-grid-4" data-equalizer>
-       {% for entrega in site.data.entregas %}
-         <li>
-          <div data-equalizer-watch>
-            <img src="http://placehold.it/1080x1080" alt="Image 1" />
-            <p>{{ entrega.description }}</p>
-          </div>
-        </li>
-      {% endfor %}
-    </ul>
-    
+    <div class="small-12 columns">
+      <ul class="small-block-grid-2 medium-block-grid-4 large-block-grid-4" data-equalizer>
+        {% for entrega in site.data.entregas %}
+          <li>
+            <div data-equalizer-watch>
+              <img src="http://placehold.it/1080x1080" alt="Image 1" />
+              <p>{{ entrega.description }}</p>
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+
   </div>
 </section>
 
