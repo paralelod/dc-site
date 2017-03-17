@@ -8,7 +8,7 @@ url: "http://lab.diogorusso.com"
 
 # Build settings - PRODUCTION
 markdown: kramdown
-gems: [jekyll-paginate,jekyll-sitemap]
+gems: [jekyll-sitemap]
 exclude: [/gulp, /node_modules,gulpfile.js,_assets,bower.json,Gemfile ,Gemfile.lock,package.json]
 
 
