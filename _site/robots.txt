@@ -1,0 +1,1 @@
+Sitemap: /dc-site/sitemap.xml

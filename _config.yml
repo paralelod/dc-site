@@ -2,7 +2,6 @@ baseurl: dc-site
 url: ''
 markdown: kramdown
 gems:
-  - jekyll-paginate
   - jekyll-sitemap
 exclude:
   - /gulp
