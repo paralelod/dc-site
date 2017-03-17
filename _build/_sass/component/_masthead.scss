@@ -16,8 +16,9 @@ section.hero {
   right: 0;
   bottom: 0;
   left: 0;
-  // background: linear-gradient(to bottom right, #002f4b, #dc4225);
-  opacity: .8;
+  background: url("../img/1920/bio-img-profile.jpg");
+  background-size: cover;
+  //opacity: .8;
 }
 
 .hero .intro {

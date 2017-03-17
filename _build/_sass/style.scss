@@ -1,13 +1,22 @@
 //----------- theme config ----------//
 
-$theme-font-serif:"times",serif; 
-$theme-font-sans-serif:"arial",sans-serif; 
+@import url('https://fonts.googleapis.com/css?family=Varela+Round'),
+        url('https://fonts.googleapis.com/css?family=Arvo');
+
+
+$theme-font-serif:'Arvo', serif; 
+$theme-font-sans-serif:'Varela Round', sans-serif; 
 $theme-font-size: 18px;
 
 $theme-dark-color: #000;
 $theme-light-color: #fff;
 $transparent: transparent;
+$brand-color: #223ded;
 
+.dc{
+    color:$brand-color;
+    font-family:$theme-font-serif; 
+}
 
 
 @import
@@ -30,7 +39,7 @@ $transparent: transparent;
     "./html/html",
     "./html/body",
     //"../base/html/links",
-    //"../base/html/text-global",
+    "./html/text-global",
     "./html/buttons",
     //"../base/html/forms",
     //"../base/html/labels",
@@ -117,3 +126,4 @@ $transparent: transparent;
     //"../docs/docs"
 ;
 
+@import "theme";

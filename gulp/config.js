@@ -67,7 +67,7 @@ module.exports = {
    images: {
     // responsive resize
 
-    imgSrc: imgsSrc,
+    imgSrc: imgsSrc+'/',
     imgSrcResp: imgsSrc+'/responsive/',
     imgDest:themeAssets+'/img/',
 

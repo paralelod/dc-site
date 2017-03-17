@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Varela+Round");
+@import url("https://fonts.googleapis.com/css?family=Arvo");
+.dc {
+  color: #223ded;
+  font-family: "Arvo", serif; }
+
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
@@ -6752,15 +6758,49 @@ html {
   backface-visibility: hidden; }
 
 body {
-  font-family: "arial", sans-serif;
+  font-family: "Varela Round", sans-serif;
   overflow: hidden;
   background: #fff; }
+
+blockquote, blockquote p {
+  font-family: "Arvo", serif;
+  font-size: 2.55rem;
+  color: #000;
+  line-height: 1.35; }
+
+h1 {
+  font-family: "Arvo", serif;
+  font-size: 3.55rem;
+  line-height: 1; }
+
+h2, h3, h4, h5, h6 {
+  font-family: "Varela Round", sans-serif;
+  line-height: 1.25; }
+
+h6 {
+  font-size: 0.8rem; }
+
+@media only screen and (min-width: 40.0625em) and (max-width: 64em) {
+  blockquote, blockquote p {
+    font-size: 2rem; }
+  h1 {
+    font-size: 2.55rem; }
+  h3 {
+    font-size: 1.8rem; } }
+
+@media only screen and (max-width: 40em) {
+  h1 {
+    font-size: 2rem; }
+  h3 {
+    font-size: 1.4rem; }
+  blockquote, blockquote p {
+    font-size: 1.3rem; } }
 
 input[type="submit"] {
   border-radius: 10rem; }
 
 .button {
-  font-family: "arial", sans-serif;
+  font-family: "Varela Round", sans-serif;
   font-weight: 300;
   background: #000;
   color: #fff;
@@ -6925,7 +6965,7 @@ input[type="submit"] {
 
 .top-bar {
   background: transparent;
-  font-family: "arial", sans-serif !important;
+  font-family: "Varela Round", sans-serif !important;
   width: 100% !important;
   transition: margin-top 0.5s ease, height 0.5s ease;
   margin-top: 1.25rem; }
@@ -6934,6 +6974,9 @@ input[type="submit"] {
     color: #000 !important;
     text-decoration: none;
     border-bottom: none; }
+
+.top-bar .toggle-topbar.menu-icon a span::after {
+  box-shadow: 0 0 0 1px #223ded, 0 7px 0 1px #223ded, 0 14px 0 1px #223ded !important; }
 
 .toggle-topbar {
   visibility: hidden; }
@@ -6946,7 +6989,7 @@ input[type="submit"] {
 .top-bar-section ul li {
   background: transparent !important; }
   .top-bar-section ul li > a {
-    font-family: "arial", sans-serif !important;
+    font-family: "Varela Round", sans-serif !important;
     font-size: 1.2rem;
     color: #000;
     text-decoration: none;
@@ -6965,10 +7008,10 @@ input[type="submit"] {
   z-index: 1; }
 
 .top-bar-li-dark {
-  color: #fff !important; }
+  color: #000 !important; }
 
 .topbar-menu-dark {
-  color: #fff !important; }
+  color: #000 !important; }
 
 .top-bar.expanded {
   transition: height 0.5s ease;
@@ -6981,12 +7024,12 @@ input[type="submit"] {
   animation: topbar-dropdown 0.5s ease-in-out; }
 
 .top-bar.expanded .title-area {
-  background: #000 !important; }
+  background: #fff !important; }
 
 .undocked {
   padding-bottom: 0.25rem;
   transition: background 0.5s ease !important;
-  background: #000 !important;
+  background: #fff !important;
   visibility: visible !important; }
 
 .undocked .toggle-topbar {
@@ -7000,7 +7043,7 @@ input[type="submit"] {
   margin-top: 0px; }
   .undocked .top-bar .name h1 a {
     transition: color 0.5s ease;
-    color: #fff !important;
+    color: #000 !important;
     text-decoration: none; }
 
 .undocked .top-bar-section ul li {
@@ -7008,11 +7051,11 @@ input[type="submit"] {
   visibility: visible; }
   .undocked .top-bar-section ul li > a {
     transition: background 0.5s ease !important;
-    color: #fff !important;
+    color: #000 !important;
     text-decoration: none; }
 
 .undocked .top-bar .toggle-topbar a {
-  color: #fff !important;
+  color: #000 !important;
   transition: color 0.5s ease !important;
   text-decoration: none;
   border-bottom: none; }
@@ -7022,7 +7065,7 @@ input[type="submit"] {
   height: 25rem !important; }
 
 .undocked .top-bar.expanded .toggle-topbar a {
-  color: #fff !important;
+  color: #000 !important;
   text-decoration: none;
   border-bottom: none; }
 
@@ -7087,7 +7130,8 @@ section.hero {
   right: 0;
   bottom: 0;
   left: 0;
-  opacity: .8; }
+  background: url("../img/1920/bio-img-profile.jpg");
+  background-size: cover; }
 
 .hero .intro {
   padding: 3rem;
@@ -7107,3 +7151,15 @@ section.hero {
 
 .padding-5rem-top-bottom {
   padding: 1.5rem 0; }
+
+.dc-time .dc-nome {
+  background: blue;
+  color: white;
+  width: 80%;
+  margin: auto;
+  z-index: 25;
+  position: absolute;
+  bottom: .5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: .5rem 0; }

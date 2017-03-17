@@ -60,16 +60,26 @@ page-id: home
     <div class="small-12 columns">
       <ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-3" data-equalizer>
         {% for person in site.data.time %}
-          <li>
-            <div data-equalizer-watch>
-              <img src="http://placehold.it/1080x1080" alt="Image 1" />
-              <p>{{ person.name }}</p>
-            </div>
+          <li class="relative">
+            <div data-equalizer-watch class="dc-time">
+              <a data-reveal-id="{{ person.id}}">
+                <img src="http://placehold.it/1080x1080" alt="Image 1" />
+                
+                  <p class="dc-nome">{{ person.name }}</p>
+              </a>
+              </div>
           </li>
         {% endfor %}
       </ul>
     </div>
   </div>
+  {% for person in site.data.time %}
+  <div id="{{ person.id}}" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+    <h2 id="modalTitle">{{ person.name}}</h2>
+    <p class="lead">{{ person.description}}</p>
+    <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+  </div>
+  {% endfor %}
 </section>
 
 <!-- Especialidades -->

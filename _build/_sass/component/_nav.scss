@@ -46,6 +46,12 @@
   }
 }
 
+// hamburger menu
+
+.top-bar .toggle-topbar.menu-icon a span::after{
+    box-shadow: 0 0 0 1px #223ded, 0 7px 0 1px #223ded, 0 14px 0 1px #223ded !important;
+}
+
 
 .toggle-topbar{
   visibility: hidden;
