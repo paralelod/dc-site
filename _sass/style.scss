@@ -1,0 +1,78 @@
+//----------- import fonts ----------//
+
+@import url('https://fonts.googleapis.com/css?family=Varela+Round'),
+        url('https://fonts.googleapis.com/css?family=Arvo');
+
+//----------- theme config ----------//
+
+$theme-font-serif:'Arvo', serif; 
+$theme-font-sans-serif:'Varela Round', sans-serif; 
+$theme-font-size: 18px;
+
+$theme-dark-color: #000;
+$theme-light-color: #fff;
+$transparent: transparent;
+
+$theme-link-color: #eee;
+
+.dc-color{
+    background: #223ded;
+}
+
+.dc-entregas{
+    background: #223ded;
+    color: $theme-light-color;
+}
+
+
+//----------- base ----------//
+
+@import
+
+    //----------- bower  ----------//
+    "../../../bower_components/normalize-css/normalize",
+	"../../../bower_components/foundation/scss/foundation",
+    "../../../bower_components/slick-carousel/slick/slick.scss",
+    "../../../bower_components/aos/src/sass/aos.scss",
+    "../../../bower_components/swipebox/scss/swipebox.scss",
+
+    //----------- base ----------//
+
+	//config
+    "./config/config-colors",
+    "./config/config-text",
+
+
+    //----------- util ----------//
+
+    "./util/size",    
+    "./util/margin",
+    "./util/position",
+
+
+    //----------- html ----------//
+
+    //style
+    "html",
+    "body",
+    "text-global",
+    
+    //----------- loading ----------//
+
+    "preloader",
+
+     //----------- components ----------//
+
+    //nav
+    "forms",
+    "buttons",
+    "nav",
+    "masthead"
+;
+
+//----------- content ----------//
+
+@import "./content/isotope",
+        "./content/slider",
+        "./content/modal"
+        ;
