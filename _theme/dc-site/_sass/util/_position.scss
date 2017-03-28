@@ -1,0 +1,43 @@
+
+
+.relative{
+	position: relative;
+}
+
+
+.center-center{
+	position:absolute; 
+	top:50%;
+	left:50%; 
+     transform: translateY(-50%)translateX(-50%);
+}
+
+
+
+
+.v-center{
+	position:absolute; 
+	top:50%; 
+     transform: translateY(-50%);
+}
+
+.h-center{
+	position:absolute; 
+	left:50%; 
+     transform: translateX(-50%);
+}
+
+
+
+@media #{$small-only} { 
+	.v-center{
+		position:relative;
+    transform: none;
+	}
+
+  .h-center{
+	position:relative; 
+  transform: none;
+}
+ 
+}

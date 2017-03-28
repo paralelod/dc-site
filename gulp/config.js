@@ -1,5 +1,6 @@
 
 //design
+var designLinks = './_design/links';
 var designSrc = './_design/layout.sketch';
 
 // config
@@ -12,13 +13,13 @@ var dataSrc = devSrc+'/_data';
 
 
 //build 
-var buildSrc = './_build';
-var imgsSrc = buildSrc+'/_img';
-var sassSrc = buildSrc+'/_sass';
-var scriptSrc = buildSrc+'/_scripts';
-var scriptSrcInit = buildSrc+'/_scripts/_init';
-var bowerSrc = buildSrc+'/bower';
-var themeSrc = './_build/_themes/dc-site';
+
+var themeSrc = './_theme/dc-site';
+var imgsSrc = themeSrc+'/_img';
+var sassSrc = themeSrc+'/_sass';
+var scriptSrc = themeSrc+'/_scripts';
+var scriptSrcInit = themeSrc+'/_scripts/_init';
+var bowerSrc = './bower_components';
 var themeAssets = themeSrc+'/assets';
 
 //dist
@@ -42,6 +43,13 @@ module.exports = {
      }
   },
 
+  //--------- theme ----------//
+
+  theme: {
+    includes: themeSrc+'/_includes/**/*.*',
+    layouts: themeSrc+'/style.json'
+  },
+
   //--------- manifest ----------//
 
   manifest: {
@@ -59,8 +67,10 @@ module.exports = {
 
   sketch: {
     sketchSrc: designSrc,
-    sketchImgDest: imgsSrc
+    sketchImgDest: imgsSrc,
+    designAssets: designLinks+'/'
   },
+  
   
   //--------- images ----------//
   
@@ -122,7 +132,7 @@ module.exports = {
   script: {
 
       headSrc: [
-        bowerSrc+'/picturePolyfill/dist/picturePolyfill.min.js'
+        bowerSrc+'/picturefill-master/dist/picturefill.js'
       ],
 
       // head js dist
@@ -130,13 +140,33 @@ module.exports = {
 
       // scripts src
       scriptsSrc: [
+
         bowerSrc+'/foundation/js/vendor/jquery.js' ,
         bowerSrc+'/foundation/js/vendor/modernizr.js' ,
         bowerSrc+'/foundation/js/vendor/fastclick.js' ,
-        bowerSrc+'/foundation/js/foundation.js',
-        bowerSrc+'/jquery.easing/js/jquery.easing.js' ,
-        scriptSrc+'/_init/*.js',
-        scriptSrc+'/my_scripts/*.js'
+        bowerSrc+'/foundation/js/foundation.min.js',
+        
+        //nav
+        bowerSrc+'/jquery.easing/js/jquery.easing.min.js',
+
+        //anim
+        bowerSrc+'/aos/dist/aos.js',
+        
+        // media
+        bowerSrc+'/lazyloadxt/dist/jquery.lazyloadxt.extra.min.js',
+        bowerSrc+'/fitvids/jquery.fitvids.js',
+        bowerSrc+'/slick-carousel/slick/slick.min.js',
+        bowerSrc+'/swipebox/src/js/jquery.swipebox.min.js',
+
+        // gallery
+        bowerSrc+'/imagesloaded/imagesloaded.pkgd.min.js',
+        bowerSrc+'/isotope/dist/isotope.pkgd.min.js',
+        bowerSrc+'/velocity/velocity.min.js',
+        bowerSrc+'/velocity/velocity.ui.min.js',
+        
+        //ini + my scripts
+        scriptSrc+'/**/**/*.js'
+
         // bowerSrc+'/imagesloaded/imagesloaded.pkgd.min.js',
         // bowerSrc+'/isotope/dist/isotope.pkgd.min.js',
         // bowerSrc+'/fullpage.js/dist/jquery.fullpage.min.js',
@@ -200,12 +230,21 @@ module.exports = {
   //--------- watch ----------//
   
   watch: {
-    jekyll: devSrc+'/**/**/*.*',
+    jekyll: [
+      devSrc+'/_config.yml',
+      devSrc+'/_data/*.*',
+      devSrc+'/*.html',
+      devSrc+'/**/**/*.md'
+      ],
     yml: configSrc+'/**/**/*.*',
     imgs: imgsSrc+'/**/**/*.*',
     scripts: scriptSrc+'/**/*.*',
     sass: sassSrc+'/**/**/*.*',
-    theme: themeSrc+'/**/**/*.*'
+    theme: [
+      themeSrc+'/assets/**/**/**/**/*.*',
+      themeSrc+'/_includes/**/**/**/**/*.*',
+      themeSrc+'/_layouts/**/**/**/**/*.*'
+    ]
   }
 
 };

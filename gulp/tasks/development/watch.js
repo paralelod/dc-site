@@ -7,7 +7,7 @@ var config = require('../../config').watch;
  */
 gulp.task('watch', ['browsersync'], function() {
   gulp.watch(config.jekyll,['jekyll-rebuild']);
-  gulp.watch(config.yml,['yamlDev']);
+  gulp.watch(config.configYml,['yamlDev']);
   gulp.watch(config.scripts,['scripts']);
   gulp.watch(config.imgs,['imgs']);
   gulp.watch(config.sass,['sass']);

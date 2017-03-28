@@ -11,6 +11,7 @@ gulp.task('imgs', function() {
   runSequence(
               'imgs-clean',
               'sketch',
+              'copy-design-links',
               'imgs-copy',
               'imgs-resp'
         );
@@ -26,7 +27,7 @@ gulp.task('imgs-clean', function () {
 
 gulp.task('imgs-copy', function() {
   return gulp.src([
-      config.imgSrc+'*.*',
+      config.imgSrc+'/**/*.*',
       config.imgSrcResp+'*.*'
     ])
     .pipe(gulp.dest(config.imgDest))

@@ -2,7 +2,6 @@
 layout: home
 page-id: home
 ---
-
 <!-- Fazendo a Diferença -->
 <section id="quem-somos" class="padding-5rem-top-bottom">
   <div class="row">
@@ -24,27 +23,29 @@ page-id: home
 
 <!-- Foto Escritório -->
 <section class="padding-5rem-top-bottom">
-  <div class="row full-width">
-    <div class="small-12" style="background: #ccc; height: 25rem; width:100%;">
-
+  <div class="row full-width large-collapse medium-collapse small-collapse">
+    <div class="small-12">
+      <img src="./assets/img/1920/escritorio.jpg" class="full-width" alt="">
     </div>
   </div>
 </section>
 <!-- O que nos move -->
-<section id="proposito" class="padding-5rem-top-bottom">
-  <div class="row relative">
+<section id="proposito">
+  <div class="row full-width relative large-collapse medium-collapse">
     <div class="small-12 medium-6 large-6 columns v-center">
-      <h2>O que nos move</h2>
-      É tempo de simplificar o Direito.<br> 
-      De ter menos formalidade e mais resultados.<br> 
-      De ter menos pompas e mais soluções.<br> 
-      Por isso, buscamos sempre o mais simples, mesmo quando estamos diante do complexo.<br>
-      De executivo para executivo.<br>
-      E sempre em busca de simplicidade.<br> 
-      Porque simplicidade se faz com agilidade, eficiência e excelência.<br>
-    </div>
+      <span style="max-width: 22rem; margin: auto;display: block;">
+        <h2>O que nos move</h2>
+        É tempo de simplificar o Direito.<br> 
+        De ter menos formalidade e mais resultados.<br> 
+        De ter menos pompas e mais soluções.<br> 
+        Por isso, buscamos sempre o mais simples, mesmo quando estamos diante do complexo.<br>
+        De executivo para executivo.<br>
+        E sempre em busca de simplicidade.<br> 
+        Porque simplicidade se faz com agilidade, eficiência e excelência.<br>
+      </div>
+    </span>
     <div class="small-12 medium-6 large-6 columns">
-      <img src="http://placehold.it/1080x1080" alt="">
+      <img src="./assets/img/1920/escritorio-2.jpg" class="full-width" alt="">
     </div>
   </div>
 </section>
@@ -52,12 +53,12 @@ page-id: home
 <!-- Time -->
 
 <section id="time" class="padding-5rem-top-bottom">
-  <div class="row text-center">
-    <div class="small-12 columns">
-      <h1>Nosso maior ativo: Nosso talento</h1>
-      <h2>time</h2>
+  <div class="row full-width text-center">
+    <div class="small-12 medium-12 large-12  columns">
+      <h2>Nosso maior ativo: Nosso talento</h2>
+      <h3>time</h3>
     </div>
-    <div class="small-12 columns">
+    <div class="small-12 medium-12 large-12 columns">
       <ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-3" data-equalizer>
         {% for person in site.data.time %}
           <li class="relative">
@@ -86,8 +87,8 @@ page-id: home
 <section id="especialidades" <section class="padding-5rem-top-bottom">
   <div class="row">
     <div class="small-12 columns text-center">
-      <h1>Áreas em que nos diferenciamos</h1>
-      <h2>ESPECIALIDADES</h2>
+      <h2>Áreas em que nos diferenciamos</h2>
+      <h3>ESPECIALIDADES</h3>
     </div>
     <div class="small-12 columns">
       <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-2" data-equalizer>
@@ -109,18 +110,18 @@ page-id: home
 </section>
 
 <!-- Entregas -->
-<section id="entregas" class="padding-5rem-top-bottom">
+<section id="entregas" class="dc-entregas">
   <div class="row">
     <div class="small-12 columns text-center">
-    <h1>Nossa Entrega</h1>
-    <h2>Track-Record recente de nosso time</h2>
+      <h2 style="color: white;">Nossa Entrega</h2>
+      <h3 style="color: white;">Track-Record recente de nosso time</h3>
     </div>
     <div class="small-12 columns">
       <ul class="small-block-grid-2 medium-block-grid-4 large-block-grid-4" data-equalizer>
         {% for entrega in site.data.entregas %}
           <li>
             <div data-equalizer-watch>
-              <img src="http://placehold.it/1080x1080" alt="Image 1" />
+              <img src="./assets/img/icon/icone_{{ entrega.id }}.png" alt="Image 1" />
               <p>{{ entrega.description }}</p>
             </div>
           </li>
