@@ -7,3 +7,11 @@
   margin: 0;
   min-height: 100%;
 }
+
+.reveal-modal{
+  background: $theme-light-color;
+}
+
+.reveal-modal-bg{
+  background: rgba( $theme-light-color, .9 );
+}

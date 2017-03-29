@@ -3,9 +3,12 @@ layout: home
 page-id: home
 ---
 <!-- Fazendo a Diferença -->
-<section id="quem-somos" class="padding-5rem-top-bottom">
+<section id="quem-somos" class="padding-section">
   <div class="row">
-    <div class="small-12 medium-12 large-12 columns"><h2>Fazendo a diferença</h2></div>
+    <div class="small-12 medium-12 large-12 columns margin-title">
+      <h2>Fazendo a diferença</h2>
+      <h3 class="dc-text">Quem Somos</h3>
+    </div>
     <div class="small-12 medium-6 large-6 columns">
           DC Associados é um escritório de advocacia diferenciado e formado por um time cujo propósito é simplificar o direito.
           <br><br>
@@ -22,7 +25,7 @@ page-id: home
 </section>
 
 <!-- Foto Escritório -->
-<section class="padding-5rem-top-bottom">
+<section>
   <div class="row full-width large-collapse medium-collapse small-collapse">
     <div class="small-12">
       <img src="./assets/img/1920/escritorio.jpg" class="full-width" alt="">
@@ -33,8 +36,11 @@ page-id: home
 <section id="proposito">
   <div class="row full-width relative large-collapse medium-collapse">
     <div class="small-12 medium-6 large-6 columns v-center">
-      <span style="max-width: 22rem; margin: auto;display: block;">
-        <h2>O que nos move</h2>
+      <div style="max-width: 22rem; margin: auto;display: block;">
+        <div class="margin-title">
+          <h2>O que nos move</h2>
+          <h3 class="dc-text">Nosso Propósito</h3>
+        </div>
         É tempo de simplificar o Direito.<br> 
         De ter menos formalidade e mais resultados.<br> 
         De ter menos pompas e mais soluções.<br> 
@@ -43,7 +49,7 @@ page-id: home
         E sempre em busca de simplicidade.<br> 
         Porque simplicidade se faz com agilidade, eficiência e excelência.<br>
       </div>
-    </span>
+    </div>
     <div class="small-12 medium-6 large-6 columns">
       <img src="./assets/img/1920/escritorio-2.jpg" class="full-width" alt="">
     </div>
@@ -51,27 +57,25 @@ page-id: home
 </section>
 
 <!-- Time -->
-
-<section id="time" class="padding-5rem-top-bottom">
+<section id="time" class="padding-section">
   <div class="row full-width text-center">
-    <div class="small-12 medium-12 large-12  columns">
-      <h2>Nosso maior ativo: Nosso talento</h2>
-      <h3>time</h3>
+    <div class="small-12 medium-12 large-12 columns margin-title">
+      <h2>Nosso maior ativo: Nosso talentos</h2>
+      <h3 class="dc-text">time</h3>
     </div>
-    <div class="small-12 medium-12 large-12 columns">
-      <ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-3" data-equalizer>
+  </div>
+    <div class="row full-width large-collapse medium-collapse" data-equalizer>
         {% for person in site.data.time %}
-          <li class="relative">
-            <div data-equalizer-watch class="dc-time">
+          <div class="small-12 medium-4 large-4 columns relative">
+            <div data-equalizer-watch class="dc-time hover03">
               <a data-reveal-id="{{ person.id}}">
-                <img src="http://placehold.it/1080x1080" alt="Image 1" />
+                	<div class="pic-frame"><img src="./assets/img/1920/{{person.id}}.jpg" alt="{{ person.name }}" /></div>
                 
-                  <p class="dc-nome">{{ person.name }}</p>
+                  <h4 class="dc-nome">{{ person.name }}</h4>
               </a>
-              </div>
-          </li>
+            </div>
+          </div>
         {% endfor %}
-      </ul>
     </div>
   </div>
   {% for person in site.data.time %}
@@ -84,20 +88,20 @@ page-id: home
 </section>
 
 <!-- Especialidades -->
-<section id="especialidades" <section class="padding-5rem-top-bottom">
+<section id="especialidades" <section class="padding-section">
   <div class="row">
-    <div class="small-12 columns text-center">
+    <div class="small-12 columns text-center margin-title">
       <h2>Áreas em que nos diferenciamos</h2>
-      <h3>ESPECIALIDADES</h3>
+      <h3 class="dc-text">Especialidades</h3>
     </div>
     <div class="small-12 columns">
       <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-2" data-equalizer>
       {% for especialidade in site.data.especialidades %}
         <li>
           <div data-equalizer-watch>
-            <h4>{{ especialidade.title }}</h4>
-            <hr>
-            <ul>
+            <h4 class="dc-text">{{ especialidade.title }}</h4>
+            <img src="./assets/img/border.svg" alt="dc-border" class="full-width">
+            <ul class="custom-list">
               {% for topic in especialidade.topics %}
               <li>{{ topic }}</li>
             {% endfor %}
@@ -110,9 +114,9 @@ page-id: home
 </section>
 
 <!-- Entregas -->
-<section id="entregas" class="dc-entregas">
+<section id="entregas" class="padding-section dc-entregas">
   <div class="row">
-    <div class="small-12 columns text-center">
+    <div class="small-12 columns text-center margin-title">
       <h2 style="color: white;">Nossa Entrega</h2>
       <h3 style="color: white;">Track-Record recente de nosso time</h3>
     </div>

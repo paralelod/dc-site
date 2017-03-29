@@ -7,7 +7,7 @@
 
 $theme-font-serif:'Arvo', serif; 
 $theme-font-sans-serif:'Varela Round', sans-serif; 
-$theme-font-size: 18px;
+$theme-font-size: 15px;
 
 $theme-dark-color: #000;
 $theme-light-color: #fff;
@@ -15,13 +15,23 @@ $transparent: transparent;
 
 $theme-link-color: #eee;
 
+$dc-color:  #223ded;
+
 .dc-color{
-    background: #223ded;
+    background: $dc-color;
 }
 
 .dc-entregas{
-    background: #223ded;
+    background: $dc-color;
     color: $theme-light-color;
+}
+
+.dc-text {
+    color: $dc-color;
+}
+
+#especialidades{
+    background: #f1f1f2;
 }
 
 
@@ -48,6 +58,9 @@ $theme-link-color: #eee;
     "./util/size",    
     "./util/margin",
     "./util/position",
+    "./util/margin",
+    "./util/images",
+    "./util/list",
 
 
     //----------- html ----------//
