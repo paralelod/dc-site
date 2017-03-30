@@ -1,17 +1,22 @@
 @import url("https://fonts.googleapis.com/css?family=Varela+Round");
 @import url("https://fonts.googleapis.com/css?family=Arvo");
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic|Poiret+One|Dancing+Script);
+.text-light {
+  color: #fff; }
+
 .dc-color {
   background: #223ded; }
 
 .dc-entregas {
   background: #223ded;
   color: #fff; }
+  .dc-entregas img {
+    max-height: 150px; }
 
 .dc-text {
   color: #223ded; }
 
-#especialidades {
+.dc-gray {
   background: #f1f1f2; }
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
@@ -8187,7 +8192,7 @@ html.swipebox-html.swipebox-touch {
   padding-left: 20px; }
 
 .custom-list li {
-  list-style-image: url("https://cdn.gomix.com/a30076b8-4d38-438e-a249-cb8aa5b106ff%2Fbullet.png");
+  list-style-image: url("../img/+bullet.svg");
   padding-left: 0;
   padding: 10px; }
 
@@ -8205,14 +8210,14 @@ body {
   background: #fff; }
 
 blockquote, blockquote p {
-  font-family: "Arvo", serif;
+  font-family: "Varela Round", sans-serif;
   font-size: 2.55rem;
   color: #000;
   line-height: 1.35; }
 
 h1 {
-  font-family: "Arvo", serif;
-  font-size: 3.55rem;
+  font-family: "Varela Round", sans-serif;
+  font-size: 4rem;
   line-height: 1; }
 
 h2, h3, h4, h5, h6 {
@@ -8229,13 +8234,13 @@ h6 {
   blockquote, blockquote p {
     font-size: 2rem; }
   h1 {
-    font-size: 2.55rem; }
+    font-size: 3.2rem; }
   h3 {
     font-size: 1.8rem; } }
 
 @media only screen and (max-width: 40em) {
   h1 {
-    font-size: 2rem; }
+    font-size: 2.75rem; }
   h3 {
     font-size: 1.4rem; }
   blockquote, blockquote p {
@@ -8437,7 +8442,7 @@ input[type="submit"] {
   .top-bar .name h1 a {
     -webkit-transition: color 0.5s ease;
     transition: color 0.5s ease;
-    color: #000 !important;
+    color: #223ded !important;
     text-decoration: none;
     border-bottom: none; }
 
@@ -8457,17 +8462,18 @@ input[type="submit"] {
   .top-bar-section ul li > a {
     font-family: "Varela Round", sans-serif !important;
     font-size: 1.2rem;
-    color: #000;
+    color: #223ded;
     text-decoration: none;
     border-bottom: none;
     -webkit-transition: color 0.5s ease !important;
-    transition: color 0.5s ease !important; }
+    transition: color 0.5s ease !important;
+    text-transform: uppercase; }
 
 .top-bar-section li:not(.has-form) a:not(.button) {
   background: transparent !important; }
 
 .top-bar .toggle-topbar a {
-  color: #000 !important;
+  color: #223ded !important;
   -webkit-transition: color 0.5s ease !important;
   transition: color 0.5s ease !important; }
 
@@ -8476,10 +8482,10 @@ input[type="submit"] {
   z-index: 1; }
 
 .top-bar-li-dark {
-  color: #000 !important; }
+  color: #223ded !important; }
 
 .topbar-menu-dark {
-  color: #000 !important; }
+  color: #223ded !important; }
 
 .top-bar.expanded {
   -webkit-transition: height 0.5s ease;
@@ -8494,7 +8500,7 @@ input[type="submit"] {
   background: #fff !important; }
 
 .undocked {
-  padding-bottom: 0.25rem;
+  padding-bottom: 0.5rem;
   -webkit-transition: background 0.5s ease !important;
   transition: background 0.5s ease !important;
   background: #fff !important;
@@ -8504,7 +8510,7 @@ input[type="submit"] {
   visibility: visible !important; }
 
 .undocked .name img {
-  max-height: 3rem; }
+  max-height: 3.3rem; }
 
 .undocked .top-bar {
   -webkit-transition: height 0.5s ease, margin-top 0.5s ease;
@@ -8513,7 +8519,7 @@ input[type="submit"] {
   .undocked .top-bar .name h1 a {
     -webkit-transition: color 0.5s ease;
     transition: color 0.5s ease;
-    color: #000 !important;
+    color: #223ded !important;
     text-decoration: none; }
 
 .undocked .top-bar-section ul li {
@@ -8522,11 +8528,12 @@ input[type="submit"] {
   .undocked .top-bar-section ul li > a {
     -webkit-transition: background 0.5s ease !important;
     transition: background 0.5s ease !important;
-    color: #000 !important;
-    text-decoration: none; }
+    color: #223ded !important;
+    text-decoration: none;
+    text-transform: uppercase; }
 
 .undocked .top-bar .toggle-topbar a {
-  color: #000 !important;
+  color: #223ded !important;
   -webkit-transition: color 0.5s ease !important;
   transition: color 0.5s ease !important;
   text-decoration: none;
@@ -8538,7 +8545,7 @@ input[type="submit"] {
   height: 25rem !important; }
 
 .undocked .top-bar.expanded .toggle-topbar a {
-  color: #000 !important;
+  color: #223ded !important;
   text-decoration: none;
   border-bottom: none; }
 

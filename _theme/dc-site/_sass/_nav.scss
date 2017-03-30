@@ -73,6 +73,7 @@
     text-decoration: none;
     border-bottom: none;
     transition: color 0.5s ease !important;
+    text-transform: uppercase;
   }
 }
 
@@ -132,7 +133,7 @@
 
 
 .undocked   {
-  padding-bottom: 0.25rem;
+  padding-bottom: 0.5rem;
   transition: background 0.5s ease !important;
   background: $top-bar-bg-undocked !important;
   visibility: visible !important;
@@ -147,7 +148,7 @@
 
 
 .undocked .name img {
-  max-height: 3rem;
+  max-height: 3.3rem;
 }
 
 
@@ -172,6 +173,7 @@
     transition: background 0.5s ease !important;
     color: $top-bar-txt-undocked !important;
     text-decoration: none;
+    text-transform: uppercase;
   }
   visibility: visible;
 }
