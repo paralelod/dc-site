@@ -27,7 +27,7 @@
   }
 
 .logo img {
-  max-height: 3rem;
+  max-height: 2rem;
 }
 
 
@@ -38,6 +38,7 @@
   width:100% !important;
   transition: margin-top 0.5s ease, height 0.5s ease; 
   margin-top:1.25rem; 
+  min-height:3.5rem;
   .name h1 a {
     transition: color 0.5s ease;
     color:$top-bar-txt!important;
@@ -73,7 +74,6 @@
     text-decoration: none;
     border-bottom: none;
     transition: color 0.5s ease !important;
-    text-transform: uppercase;
   }
 }
 
@@ -133,7 +133,7 @@
 
 
 .undocked   {
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.25rem;
   transition: background 0.5s ease !important;
   background: $top-bar-bg-undocked !important;
   visibility: visible !important;
@@ -148,7 +148,7 @@
 
 
 .undocked .name img {
-  max-height: 3.3rem;
+  max-height: 3rem;
 }
 
 
@@ -173,7 +173,6 @@
     transition: background 0.5s ease !important;
     color: $top-bar-txt-undocked !important;
     text-decoration: none;
-    text-transform: uppercase;
   }
   visibility: visible;
 }
