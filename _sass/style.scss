@@ -1,12 +1,15 @@
 //----------- import fonts ----------//
 
-@import url('https://fonts.googleapis.com/css?family=Varela+Round'),
-        url('https://fonts.googleapis.com/css?family=Arvo');
+@import url('https://fonts.googleapis.com/css?family=Cabin+Condensed');
+
+
+// set toggle topbar at foundation/scss/_top-bar.scss line 78
+// $topbar-breakpoint: #{lower-bound($large-range)} !default; // Change to 9999px for always mobile layout
 
 //----------- theme config ----------//
 
-$theme-font-serif: 'Varela Round', sans-serif; ;//'Arvo', serif; 
-$theme-font-sans-serif:'Varela Round', sans-serif; 
+$theme-font-serif: 'Cabin Condensed', sans-serif;
+$theme-font-sans-serif:'Cabin Condensed', sans-serif; 
 $theme-font-size: 15px;
 
 $theme-dark-color: #000;

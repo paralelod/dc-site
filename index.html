@@ -57,7 +57,7 @@ page-id: home
       </div>
     </div>
     <div class="small-12 medium-6 large-6 columns dc-gray">
-      <img src="./assets/img/1920/escritorio-2.jpg" data-aos="fade" data-aos-delay="100" data-aos-duration="750">
+      <img src="./assets/img/1920/escritorio-2.jpg" class="full-width" data-aos="fade" data-aos-delay="100" data-aos-duration="750">
     </div>
   </div>
 </section>
@@ -73,7 +73,7 @@ page-id: home
     <div class="row full-width large-collapse medium-collapse" data-equalizer>
         {% for person in site.data.time %}
           <div class="small-12 medium-4 large-4 columns relative text-center">
-            <div data-equalizer-watch class="dc-time hover03">
+            <div data-equalizer-watch class="hover03" >
               <a data-reveal-id="{{ person.id}}">
                 <div class="dc-color">
                   <div class="pic-frame" data-aos="fade" data-aos-delay="{{ person.delay }}">
