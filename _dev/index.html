@@ -72,17 +72,15 @@ page-id: home
   </div>
     <div class="row full-width large-collapse medium-collapse">
         {% for person in site.data.time %}
-          <div class="small-12 medium-4 large-4 columns relative text-center">
-            <div class="hover03" >
+          <div class="small-12 medium-4 large-4 columns relative text-center hover03">
               <a data-reveal-id="{{ person.id}}">
                 <div class="dc-color">
-                  <div class="pic-frame" data-aos="fade" data-aos-delay="{{ person.delay }}" style="margin-left: -1px;">
-                    <img src="./assets/img/1920/{{person.id}}.jpg" alt="{{ person.name }}" />
+                  <div class="pic-frame" data-aos="fade" data-aos-delay="{{ person.delay }}" >
+                    <img src="./assets/img/1920/{{person.id}}.jpg" alt="{{ person.name }}">
                   </div>
                 </div>  
                 <h4 class="dc-text">{{ person.name }}</h4>
               </a>
-            </div>
           </div>
         {% endfor %}
     </div>
