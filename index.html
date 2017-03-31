@@ -70,13 +70,13 @@ page-id: home
       <h3 class="dc-text">time</h3>
     </div>
   </div>
-    <div class="row full-width large-collapse medium-collapse" data-equalizer>
+    <div class="row full-width large-collapse medium-collapse">
         {% for person in site.data.time %}
           <div class="small-12 medium-4 large-4 columns relative text-center">
-            <div data-equalizer-watch class="hover03" >
+            <div class="hover03" >
               <a data-reveal-id="{{ person.id}}">
                 <div class="dc-color">
-                  <div class="pic-frame" data-aos="fade" data-aos-delay="{{ person.delay }}">
+                  <div class="pic-frame" data-aos="fade" data-aos-delay="{{ person.delay }}" style="margin-left: -1px;">
                     <img src="./assets/img/1920/{{person.id}}.jpg" alt="{{ person.name }}" />
                   </div>
                 </div>  
@@ -88,7 +88,7 @@ page-id: home
     </div>
   </div>
   {% for person in site.data.time %}
-  <div id="{{ person.id}}" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+  <div id="{{ person.id}}" class="reveal-modal" data-reveal aria-labelledby="modalTitle" data-options="animation:fade;" aria-hidden="true" role="dialog">
     <h2 id="modalTitle">{{ person.name}}</h2>
     <p class="lead">{{ person.description}}</p>
     <a class="close-reveal-modal" aria-label="Close">&#215;</a>
