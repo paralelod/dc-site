@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Varela+Round");
-@import url("https://fonts.googleapis.com/css?family=Arvo");
+@import url("https://fonts.googleapis.com/css?family=Cabin+Condensed");
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic|Poiret+One|Dancing+Script);
 .text-light {
   color: #fff; }
@@ -11,7 +10,7 @@
   background: #223ded;
   color: #fff; }
   .dc-entregas img {
-    max-height: 150px; }
+    max-height: 115px; }
 
 .dc-text {
   color: #223ded; }
@@ -4823,8 +4822,8 @@ table {
     top: 50%; } }
 
 meta.foundation-mq-topbar {
-  font-family: "/only screen and (min-width:40.0625em)/";
-  width: 40.0625em; }
+  font-family: "/only screen and (min-width:64.0625em)/";
+  width: 64.0625em; }
 
 /* Wrapped around .top-bar to contain to grid width */
 .contain-to-grid {
@@ -5169,7 +5168,7 @@ meta.foundation-mq-topbar {
 .js-generated {
   display: block; }
 
-@media only screen and (min-width: 40.0625em) {
+@media only screen and (min-width: 64.0625em) {
   .top-bar {
     background: #333333;
     overflow: visible; }
@@ -7987,13 +7986,13 @@ html.swipebox-html.swipebox-touch {
 /* Zoom Out #1 */
 .hover03 .pic-frame img {
   -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+          transform: scale(1.1);
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out; }
 
 .hover03 .pic-frame:hover img {
-  -webkit-transform: scale(1);
-  transform: scale(1); }
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05); }
 
 /* Slide */
 .hover05 figure img {
@@ -8205,23 +8204,23 @@ html {
   backface-visibility: hidden; }
 
 body {
-  font-family: "Varela Round", sans-serif;
+  font-family: "Cabin Condensed", sans-serif;
   overflow: hidden;
   background: #fff; }
 
 blockquote, blockquote p {
-  font-family: "Varela Round", sans-serif;
+  font-family: "Cabin Condensed", sans-serif;
   font-size: 2.55rem;
   color: #000;
   line-height: 1.35; }
 
 h1 {
-  font-family: "Varela Round", sans-serif;
+  font-family: "Cabin Condensed", sans-serif;
   font-size: 4rem;
   line-height: 1; }
 
 h2, h3, h4, h5, h6 {
-  font-family: "Varela Round", sans-serif;
+  font-family: "Cabin Condensed", sans-serif;
   line-height: 1.25; }
 
 h2, h3, h4 {
@@ -8281,7 +8280,7 @@ h6 {
   font-size: 10px; }
 
 .spinner > div {
-  background-color: #000;
+  background-color: #223ded;
   height: 100%;
   width: 6px;
   display: inline-block;
@@ -8327,7 +8326,7 @@ input[type="submit"] {
   border-radius: 10rem; }
 
 .button {
-  font-family: "Varela Round", sans-serif;
+  font-family: "Cabin Condensed", sans-serif;
   font-weight: 300;
   background: #000;
   color: #fff;
@@ -8430,15 +8429,16 @@ input[type="submit"] {
   text-decoration: none; }
 
 .logo img {
-  max-height: 3rem; }
+  max-height: 2rem; }
 
 .top-bar {
   background: transparent;
-  font-family: "Varela Round", sans-serif !important;
+  font-family: "Cabin Condensed", sans-serif !important;
   width: 100% !important;
   -webkit-transition: margin-top 0.5s ease, height 0.5s ease;
   transition: margin-top 0.5s ease, height 0.5s ease;
-  margin-top: 1.25rem; }
+  margin-top: 1.25rem;
+  min-height: 3.5rem; }
   .top-bar .name h1 a {
     -webkit-transition: color 0.5s ease;
     transition: color 0.5s ease;
@@ -8460,14 +8460,13 @@ input[type="submit"] {
 .top-bar-section ul li {
   background: transparent !important; }
   .top-bar-section ul li > a {
-    font-family: "Varela Round", sans-serif !important;
+    font-family: "Cabin Condensed", sans-serif !important;
     font-size: 1.2rem;
     color: #223ded;
     text-decoration: none;
     border-bottom: none;
     -webkit-transition: color 0.5s ease !important;
-    transition: color 0.5s ease !important;
-    text-transform: uppercase; }
+    transition: color 0.5s ease !important; }
 
 .top-bar-section li:not(.has-form) a:not(.button) {
   background: transparent !important; }
@@ -8500,7 +8499,7 @@ input[type="submit"] {
   background: #fff !important; }
 
 .undocked {
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.25rem;
   -webkit-transition: background 0.5s ease !important;
   transition: background 0.5s ease !important;
   background: #fff !important;
@@ -8510,7 +8509,7 @@ input[type="submit"] {
   visibility: visible !important; }
 
 .undocked .name img {
-  max-height: 3.3rem; }
+  max-height: 3rem; }
 
 .undocked .top-bar {
   -webkit-transition: height 0.5s ease, margin-top 0.5s ease;

@@ -5,63 +5,10 @@ theme: dc-site
 author: DC Associados
 job: DC Associadosr
 title: DC Associados
-description: DC Associados
+description: 'http://localhost:2222/'
 logo: +logo.png
 favico: +ico.png
 email: contatoo@dcassociados.com.br
 country: Brasil
 region: São Paulo
 city: São Paulo
-collections:
-  docs:
-    output: true
-defaults:
-  - scope:
-      path: ''
-      type: pages
-    values:
-      layout: page/default
-      dev-info: true
-      structure: multi-page
-      foundation5: 1
-      fullpage: 0
-      isotope: 0
-      scroll-to: 0
-      animation-page: 0
-      animation-scroll: 0
-      fitivid: 1
-      swipebox: 1
-      preloader: 1
-      nav: 1
-      footer: 1
-      sidenav: 0
-      masthead: 0
-      back-to-top: 0
-      slider: 0
-  - scope:
-      path: ''
-      type: posts
-    values:
-      layout: post
-      auto-scroll: false
-      txt-color: dark
-      hero: true
-      hero-bg-color: '#000'
-      title: TITLE DEFAULT
-      cover: /lib/content/cover/post-default-cover.jpg
-      description: DESCRIPTION DEFAULT
-      tags:
-        - journal
-g-analytics: UA-59944728-3
-fb-app-id: '915671155245552'
-see-also:
-  - 'http://work.diogorusso.com'
-  - 'http://www.lucaszappa.com.br'
-  - 'http://www.estudioberinjela.com.br'
-social:
-  - name: behance
-    url: 'https://www.behance.net/diogorusso'
-  - name: linkedin
-    url: 'https://www.linkedin.com/in/diogorusso/en'
-  - name: envelope-o
-    url: 'mailto:contato@estudioberinjela.com.br'

@@ -1,5 +1,5 @@
 //foundation init
-  $(document).foundation('reveal', {animation: 'fade'})
+  $(document).foundation();
 
   //foundation init JOYRIDE *crash ORBIT slider
   //$(document).foundation('joyride', 'start');
