@@ -1,1 +1,1 @@
-Sitemap: /dc-site/sitemap.xml
+Sitemap: http://lab.diogorusso.com//dc-site/sitemap.xml
