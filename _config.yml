@@ -20,7 +20,7 @@ description: >-
   cujo propósito é simplificar o direito. 
 logo: +logo.png
 favico: +ico.png
-card: /assets/img/dc-share.png
+card: 'http://lab.diogorusso.com/assets/img/dc-share.png'
 email: contatoo@dcassociados.com.br
 country: Brasil
 region: São Paulo
