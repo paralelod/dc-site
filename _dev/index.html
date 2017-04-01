@@ -95,9 +95,9 @@ page-id: home
     </div>
   </div>
   {% for person in site.data.time %}
-  <div id="{{ person.id}}" class="reveal-modal" data-reveal aria-labelledby="modalTitle" data-options="animation:fade;" aria-hidden="true" role="dialog">
-    <h2 id="modalTitle">{{ person.name}}</h2>
-    <p class="lead">{{ person.description}}</p>
+  <div id="{{ person.id}}" class="reveal-modal text-center" data-reveal aria-labelledby="modalTitle" data-options="animation:fade;" aria-hidden="true" role="dialog">
+    <h2 id="modalTitle" class="dc-text">{{ person.name}}</h2>
+    <p>{{ person.description}}</p>
     <a class="close-reveal-modal" aria-label="Close">&#215;</a>
   </div>
   {% endfor %}

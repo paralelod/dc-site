@@ -8563,7 +8563,8 @@ input[type="submit"] {
   min-height: 100%; }
 
 .reveal-modal {
-  background: #fff; }
+  background: #fff;
+  border: none; }
 
 .reveal-modal-bg {
   background: rgba(255, 255, 255, 0.9); }
