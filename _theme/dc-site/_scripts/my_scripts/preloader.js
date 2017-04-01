@@ -6,4 +6,4 @@ $(window).load(function() { // makes sure the whole site is loaded
         $('body').delay(350).css({'overflow':'visible'})
 });
 
-
+console.log('PRE LOADER loaded!');

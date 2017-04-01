@@ -14,3 +14,5 @@ jQuery(".main-container").on("scroll",function(){
       $(".anim-menu").removeClass("undocked");
   }
 });
+
+console.log('TOP BAR loaded!');
