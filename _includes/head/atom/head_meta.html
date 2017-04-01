@@ -1,26 +1,17 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
 <meta name="author" content="{{ site.author }}">
 <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 <meta name="{{ site.description }}">
-
-
 {% if page.url == "/404.html" %}
-<meta http-equiv="refresh" content="5; url=/">
+<meta http-equiv="refresh" content="1; url=/">
 {% endif %}
-
-
-
 <meta property="og:type"        content="website" /> 
 <meta property="og:title"       content="{{ site.title }}" />
 <meta property="og:image"       content="{{ site.card }}" />
 <meta property="og:description" content="{{ site.description }}" />
-
-
-
-<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="{{ site.url}}" />
 <meta name="twitter:url" content="{{ site.url}}">
 <meta name="twitter:title" content="{{ site.title }}" />

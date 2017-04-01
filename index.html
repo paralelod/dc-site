@@ -2,6 +2,7 @@
 layout: home
 page-id: home
 ---
+
 <!-- Fazendo a Diferença -->
 <section id="quem-somos" class="padding-section">
   <div class="row">
@@ -24,19 +25,20 @@ page-id: home
   </div>
 </section>
 
-<!-- Foto Escritório -->
+<!-- Foto  -->
 <section>
   <div class="row full-width large-collapse medium-collapse small-collapse dc-color">
-    <div class="small-12 columns" data-aos="fade"data-aos-duration="700" style="margin-bottom: -1px;">
-      <img class="full-width" src="./assets/img/1920/escritorio.jpg" alt="">
+    <div class="small-12 columns margin-bottom-neg-1" data-aos="fade"data-aos-duration="700">
+      {% include img.html max-wid="1920" b-points="1920|1482|1042|791|480" file="escritorio.jpg" alt="Escritorio" %}
     </div>
   </div>
 </section>
+
 <!-- O que nos move -->
 <section id="proposito">
   <div class="row full-width relative large-collapse medium-collapse">
     <div class="small-12 medium-6 large-6 columns v-center">
-      <div style="max-width: 22rem; margin: auto;display: block;" data-aos="fade-right">
+      <div class="content-box" data-aos="fade-right">
         <div class="margin-title">
           <h2>O que nos move</h2>
           <h3 class="dc-text">Nosso Propósito</h3>
@@ -57,7 +59,9 @@ page-id: home
       </div>
     </div>
     <div class="small-12 medium-6 large-6 columns dc-gray">
-      <img src="./assets/img/1920/escritorio-2.jpg" class="full-width" data-aos="fade" data-aos-delay="100" data-aos-duration="750">
+      <span  data-aos="fade" data-aos-delay="100" data-aos-duration="750">
+        {% include img.html max-wid="1482" b-points="1482|1042|791|480" file="escritorio-2.jpg" alt="DC Associados" %}
+      </span>
     </div>
   </div>
 </section>
@@ -76,7 +80,9 @@ page-id: home
               <a data-reveal-id="{{ person.id}}">
                 <div class="dc-color">
                   <div class="pic-frame" data-aos="fade" data-aos-delay="{{ person.delay }}" >
-                    <img src="./assets/img/1920/{{person.id}}.jpg" alt="{{ person.name }}">
+                    {% capture person-name %}{{ person.name }}{% endcapture %}
+                    {% capture person-id %}{{ person.id }}.jpg{% endcapture %}
+                    {% include img.html max-wid="1042" b-points="1042|791|480" file= person-id alt=person-name %}
                   </div>
                 </div>  
                 <h4 class="dc-text">{{ person.name }}</h4>
@@ -86,9 +92,9 @@ page-id: home
     </div>
   </div>
   {% for person in site.data.time %}
-  <div id="{{ person.id}}" class="reveal-modal" data-reveal aria-labelledby="modalTitle" data-options="animation:fade;" aria-hidden="true" role="dialog">
-    <h2 id="modalTitle">{{ person.name}}</h2>
-    <p class="lead">{{ person.description}}</p>
+  <div id="{{ person.id}}" class="reveal-modal text-center" data-reveal aria-labelledby="modalTitle" data-options="animation:fade;" aria-hidden="true" role="dialog">
+    <h2 id="modalTitle" class="dc-text">{{ person.name}}</h2>
+    <p>{{ person.description}}</p>
     <a class="close-reveal-modal" aria-label="Close">&#215;</a>
   </div>
   {% endfor %}
@@ -124,8 +130,8 @@ page-id: home
 <section id="entregas" class="padding-section dc-entregas">
   <div class="row text-center relative">
     <div class="small-12 columns margin-title" >
-      <h2 style="color: white;">Nossa Entrega</h2>
-      <h3 style="color: white;">Track-Record recente de nosso time</h3>
+      <h2>Nossa Entrega</h2>
+      <h3>Track-Record recente de nosso time</h3>
     </div>
     <div class="small-12 columns">
       <ul class="small-block-grid-2 medium-block-grid-4 large-block-grid-4" data-equalizer>
@@ -139,7 +145,6 @@ page-id: home
         {% endfor %}
       </ul>
     </div>
-
   </div>
 </section>
 

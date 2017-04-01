@@ -1,5 +1,5 @@
-baseurl: dc-site
-url: 'http://lab.diogorusso.com/'
+baseurl: ''
+url: 'http://lab.diogorusso.com/dc-site'
 markdown: kramdown
 gems:
   - jekyll-sitemap
