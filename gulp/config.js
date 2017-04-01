@@ -143,8 +143,10 @@ module.exports = {
 
         bowerSrc+'/foundation/js/vendor/jquery.js' ,
         bowerSrc+'/foundation/js/vendor/modernizr.js' ,
+        bowerSrc+'/picturePolyfill/dist/picturePollyfill.min.js',
         bowerSrc+'/foundation/js/vendor/fastclick.js' ,
         bowerSrc+'/foundation/js/foundation.min.js',
+
         
         //nav
         bowerSrc+'/jquery.easing/js/jquery.easing.min.js',
@@ -153,35 +155,19 @@ module.exports = {
         bowerSrc+'/aos/dist/aos.js',
         
         // media
-        bowerSrc+'/lazyloadxt/dist/jquery.lazyloadxt.extra.min.js',
-        bowerSrc+'/fitvids/jquery.fitvids.js',
-        bowerSrc+'/slick-carousel/slick/slick.min.js',
-        bowerSrc+'/swipebox/src/js/jquery.swipebox.min.js',
+        // bowerSrc+'/lazyloadxt/dist/jquery.lazyloadxt.extra.min.js',
+        // bowerSrc+'/fitvids/jquery.fitvids.js',
+        // bowerSrc+'/slick-carousel/slick/slick.min.js',
+        // bowerSrc+'/swipebox/src/js/jquery.swipebox.min.js',
 
         // gallery
-        bowerSrc+'/imagesloaded/imagesloaded.pkgd.min.js',
-        bowerSrc+'/isotope/dist/isotope.pkgd.min.js',
-        bowerSrc+'/velocity/velocity.min.js',
-        bowerSrc+'/velocity/velocity.ui.min.js',
+        // bowerSrc+'/imagesloaded/imagesloaded.pkgd.min.js',
+        // bowerSrc+'/isotope/dist/isotope.pkgd.min.js',
+        // bowerSrc+'/velocity/velocity.min.js',
+        // bowerSrc+'/velocity/velocity.ui.min.js',
         
         //ini + my scripts
         scriptSrc+'/**/**/*.js'
-
-        // bowerSrc+'/imagesloaded/imagesloaded.pkgd.min.js',
-        // bowerSrc+'/isotope/dist/isotope.pkgd.min.js',
-        // bowerSrc+'/fullpage.js/dist/jquery.fullpage.min.js',
-        // bowerSrc+'/FitVids.js-master/jquery.fitvids.js',
-        // bowerSrc+'/swipebox-master/src/js/jquery.swipebox.min.js',
-        // bowerSrc+'/slick-carousel/slick/slick.min.js' ,
-        // bowerSrc+'/aos/dist/aos.js',
-        // bowerSrc+'/animsition-master/animsition.min.js',
-        // scriptSrcInit+'/_init/animsition_init.js',
-        // scriptSrcInit+'/_init/aos_init.js',
-        // scriptSrcInit+'/_init/fitivid_init.js',
-        // scriptSrcInit+'/_init/foundation_init.js',
-        // scriptSrcInit+'/_init/fullpage_init.js',
-        // scriptSrcInit+'/_init/isotope_init.js',
-        // scriptSrcInit+'/_init/swipebox_init.js',
       ],
       //js dist
       scriptsDist: 'script.js',

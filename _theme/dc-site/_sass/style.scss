@@ -32,6 +32,9 @@ $dc-color:  #223ded;
 .dc-entregas{
     background: $dc-color;
     color: $theme-light-color;
+    h2{ color: $theme-light-color;}
+    h3{ color: $theme-light-color;}
+   
 
     img{
        max-height: 115px; 
@@ -44,6 +47,11 @@ $dc-color:  #223ded;
 
 .dc-gray{
     background: #f1f1f2;
+}
+
+
+.dc-map{
+    min-height: 550px;
 }
 
 

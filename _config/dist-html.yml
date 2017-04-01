@@ -3,7 +3,7 @@
 
 baseurl: "" 
 # only for github, gulp baseurl set in config_dev.yml
-url: "http://lab.diogorusso.com" 
+url: "http://www.dcassociados.com" 
 # the base hostname & protocol for your site
 
 # Build settings - PRODUCTION

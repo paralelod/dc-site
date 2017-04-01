@@ -4,11 +4,11 @@
 author: "DC Associados"
 job: "DC Associadosr"
 title: "DC Associados"
-description: "http://localhost:2222/"
+description: "DC Associados é um escritório de advocacia diferenciado e formado por um time cujo propósito é simplificar o direito."
 logo: "+logo.png"
 favico: "+ico.png"
 #avatar: "+avatar.png"
-#card: "/lib/img/_site_card.jpg"
+card: "http://lab.diogorusso.com/dc-site/assets/img/share.png"
 email: contatoo@dcassociados.com.br
 country: "Brasil"
 region: "São Paulo"

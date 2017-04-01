@@ -9,6 +9,10 @@
 .dc-entregas {
   background: #223ded;
   color: #fff; }
+  .dc-entregas h2 {
+    color: #fff; }
+  .dc-entregas h3 {
+    color: #fff; }
   .dc-entregas img {
     max-height: 115px; }
 
@@ -17,6 +21,9 @@
 
 .dc-gray {
   background: #f1f1f2; }
+
+.dc-map {
+  min-height: 550px; }
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -7941,6 +7948,9 @@ html.swipebox-html.swipebox-touch {
 .margin-title {
   margin-bottom: 2.5rem; }
 
+.margin-bottom-neg-1 {
+  margin-bottom: -1px; }
+
 .relative {
   position: relative; }
 
@@ -7950,6 +7960,11 @@ html.swipebox-html.swipebox-touch {
   left: 50%;
   -webkit-transform: translateY(-50%) translateX(-50%);
           transform: translateY(-50%) translateX(-50%); }
+
+.content-box {
+  max-width: 22rem;
+  margin: auto;
+  display: block; }
 
 .v-center {
   position: absolute;
@@ -7978,6 +7993,9 @@ html.swipebox-html.swipebox-touch {
 
 .margin-title {
   margin-bottom: 2.5rem; }
+
+.margin-bottom-neg-1 {
+  margin-bottom: -1px; }
 
 .pic-frame {
   overflow: hidden;

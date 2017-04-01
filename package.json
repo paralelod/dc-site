@@ -1,13 +1,12 @@
 {
-  "name": "Jellykit",
-  "version": "0.0.0",
-  "description": "Diogo Russo's JellyKit",
+  "name": "DC Associados",
+  "version": "1.0.0",
+  "description": "Website da EMpresa",
   "keywords": [
-    "Diogo",
-    "Russo",
-    "JellyKit"
+    "DC",
+    "Associados"
   ],
-  "author": "diogo russo",
+  "author": "Berinjela + o Campo",
   "devDependencies": {
     "browser-sync": "^2.11.1",
     "gulp": "^3.9.0",
