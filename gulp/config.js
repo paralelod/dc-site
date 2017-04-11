@@ -166,7 +166,7 @@ module.exports = {
         // bowerSrc+'/velocity/velocity.min.js',
         // bowerSrc+'/velocity/velocity.ui.min.js',
         
-        //ini + my scripts
+        // _init + my scripts
         scriptSrc+'/**/**/*.js'
       ],
       //js dist

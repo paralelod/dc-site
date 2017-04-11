@@ -8262,8 +8262,9 @@ input[type="submit"] {
   border-bottom: none;
   text-decoration: none; }
 
-.logo img {
-  max-height: 2rem; }
+.name img {
+  min-height: 3.5rem;
+  margin-left: 2rem; }
 
 .top-bar {
   background: transparent;
@@ -8343,7 +8344,8 @@ input[type="submit"] {
   visibility: visible !important; }
 
 .undocked .name img {
-  max-height: 3rem; }
+  min-height: 3.5rem;
+  margin-left: 2rem; }
 
 .undocked .top-bar {
   -webkit-transition: height 0.5s ease, margin-top 0.5s ease;
